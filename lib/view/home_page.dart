@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get_it_tutorial/domain/meme_controller.dart';
 import 'package:get_it_tutorial/domain/models/meme.dart';
-
-import '../locator.dart';
 
 class HomePageView extends StatefulWidget {
   @override
@@ -48,11 +45,8 @@ class _HomePageViewState extends State<HomePageView> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.skip_next),
         onPressed: () async {
-          Meme meme = await getIt.get<MemeDomainController>().getNextMeme();
-
-          setState(() {
-            visibleMeme = meme;
-          });
+          // TODO 5: Locate the service with GetIt and call getNextMeme
+          // TODO 7: Use setState to update the visibleMeme
         },
       ),
     );

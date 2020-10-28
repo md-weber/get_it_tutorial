@@ -29,8 +29,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   http: any
-  get_it: ^5.0.1
-  octo_image: ^0.3.0
+
+  # TODO 1: include GetIt as a dependency
 
 dev_dependencies:
   flutter_test:
